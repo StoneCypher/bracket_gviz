@@ -1,0 +1,27 @@
+digraph g {
+
+  rankdir=LR;
+
+  { rank=same; ah; fin; ip; }
+
+  a -> ab -> ad -> ah -> fin;
+  b -> ab;
+  c -> cd -> ad;
+  d -> cd;
+
+  e -> ef -> eh -> ah;
+  f -> ef;
+  g -> gh -> eh;
+  h -> gh;
+
+
+  fin  -> ip -> il -> ij -> i [ dir=back ];
+                      ij -> j [ dir=back ];
+                il -> kl -> k [ dir=back ];
+                      kl -> l [ dir=back ];
+          ip -> mp -> mn -> m [ dir=back ];
+                      ml -> n [ dir=back ];
+                mp -> op -> o [ dir=back ];
+                      op -> p [ dir=back ];
+
+}
